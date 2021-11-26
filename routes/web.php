@@ -15,11 +15,8 @@ use App\Http\Controllers\ProjectController;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return redirect('/projects');
 });
 
 
 Route::resource('projects', ProjectController::class);
-
-// Route::resource('projects', 'ProjectController');
-
